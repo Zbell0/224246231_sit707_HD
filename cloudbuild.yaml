@@ -5,4 +5,7 @@ steps:
   - name: "gcr.io/cloud-builders/mvn"
     args: ["test"]
 
+options:
+  logging: CLOUD_LOGGING_ONLY
+
 timeout: 600s
